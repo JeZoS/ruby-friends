@@ -1,29 +1,28 @@
-<p id="notice"><%= notice %></p>
 
 <p>
-  <strong>First name:</strong>
-  <%= @friend.first_name %>
+  <strong>First name: </strong>
+  <%= @friend.first_name.capitalize %>
 </p>
 
 <p>
-  <strong>Last name:</strong>
-  <%= @friend.last_name %>
+  <strong>Last name: </strong>
+  <%= @friend.last_name.capitalize %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong>Email: </strong>
   <%= @friend.email %>
 </p>
 
 <p>
-  <strong>Phone:</strong>
+  <strong>Phone: </strong>
   <%= @friend.phone %>
 </p>
 
 <p>
-  <strong>Twitter:</strong>
+  <strong>Twitter: </strong>
   <%= @friend.twitter %>
 </p>
 
-<%= link_to 'Edit', edit_friend_path(@friend) %> |
-<%= link_to 'Back', friends_path %>
+<%= link_to 'Edit', edit_friend_path(@friend) ,class: 'btn hvr-sweep-to-right border' %> |
+<%= link_to 'Back', friends_path ,class: 'btn hvr-sweep-to-right border'%>

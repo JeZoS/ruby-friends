@@ -1,9 +1,7 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Friends</h1>
 
-<table>
-  <thead>
+<table class='table table-striped' >
+  <thead >
     <tr>
       <th>First name</th>
       <th>Last name</th>
@@ -22,9 +20,9 @@
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
         <td><%= friend.twitter %></td>
-        <td><%= link_to 'Show', friend %></td>
-        <td><%= link_to 'Edit', edit_friend_path(friend) %></td>
-        <td><%= link_to 'Destroy', friend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', friend,class: 'btn btn-sm hvr-sweep-to-right text-primary' %></td>
+        <td><%= link_to 'Edit', edit_friend_path(friend) ,class: 'btn btn-sm text-warning hvr-sweep-to-right'%></td>
+        <td><%= link_to 'Destroy', friend, method: :delete, data: { confirm: 'Are you sure?' } ,class: 'btn text-danger btn-sm hvr-sweep-to-right'%></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Friend', new_friend_path %>
+<%= link_to 'New Friend', new_friend_path, class: 'btn hvr-sweep-to-right border' %>
