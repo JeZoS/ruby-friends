@@ -85,6 +85,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    email_validator (2.2.3)
+      activemodel
     erubi (1.10.0)
     ffi (1.15.0-x64-mingw32)
     globalid (0.4.2)
@@ -213,6 +215,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   devise (~> 4.8)
+  email_validator
   jbuilder (~> 2.7)
   pg (~> 1.2, >= 1.2.3)
   puma (~> 5.0)
